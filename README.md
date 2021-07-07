@@ -11,7 +11,7 @@
 $ git clone https://github.com/jiwoo-jus/trailing_white_spaces_remover_korean.git
 ```
 
-2. 서브모듈 py-hanspell 가져오기
+2. 서브모듈 가져오기
 ```
 $ git submodule init
 $ git submodule udpate
@@ -30,17 +30,23 @@ $ python setup.py install
 
 2. 코드 수정
 
-[main.py](https://github.com/jiwoo-jus/trailing_white_spaces_remover_korean/blob/master/main.py) **line 27**
+    [main.py](https://github.com/jiwoo-jus/trailing_white_spaces_remover_korean/blob/master/main.py) **line 27**
+    
+    ```
+    textfile = '대상 텍스트파일명'
+    ```
 
-```
-textfile = '대상 텍스트파일명' 
-```
+    [main.py](https://github.com/jiwoo-jus/trailing_white_spaces_remover_korean/blob/master/main.py) **line 9**
 
-[main.py](https://github.com/jiwoo-jus/trailing_white_spaces_remover_korean/blob/master/main.py) **line 9**
+    ```
+    with open('결과로 반환할 텍스트파일명.txt', 'w', encoding='utf-8') as fw:
+    ```
 
-```
-with open('결과로 반환할 텍스트파일명.txt', 'w', encoding='utf-8') as fw:
-```
+    [main.py](https://github.com/jiwoo-jus/trailing_white_spaces_remover_korean/blob/master/main.py) **line 21**
+
+    ```
+    if len(scripts[i]) < 대상 텍스트의 한 행 평균 글자수:
+    ```
 
 -------------------------
 
